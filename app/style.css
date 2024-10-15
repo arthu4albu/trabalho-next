@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #dfdfdf;
 
   height: 100vh;
 
@@ -87,6 +87,8 @@ body {
 .container form .password {
   display: flex;
   flex-direction: column;
+
+  color: #fff;
 }
 
 .container form label {

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="container">
-        <img src="/images/foto.png" alt="Imagem de perfil" />
+        <img src="/images/foto.svg" alt="Imagem de perfil" />
 
         <form action="">
           <div className="user">

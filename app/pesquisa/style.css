@@ -1,0 +1,482 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container aside {
+  width: 18rem;
+  height: 100vh;
+
+  border-right: 2px solid #093e2b;
+
+  background-color: #e4e4e4;
+}
+
+.container aside > header {
+  background-color: #288e69;
+  height: 4.5rem;
+
+  padding-left: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.container aside > header img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.container aside > header > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.1rem;
+}
+
+.menu {
+  height: 2.5rem;
+  background-color: #093e2b;
+
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add::before {
+  content: "+";
+  font-size: 3rem;
+}
+
+.add {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+
+  font-size: 1.25rem;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+}
+
+.add:hover {
+  cursor: pointer;
+  background-color: #a0a0a0;
+}
+
+.access-menu > div {
+  padding: 0.5rem 1rem;
+  color: #1c1313;
+
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.access-menu > div > ul {
+  list-style: none;
+
+  border-left: 3px solid #000;
+  margin: 0.8rem;
+}
+
+.access-menu > div > ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5rem;
+
+  padding-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.access-menu > div > ul li:hover {
+  cursor: pointer;
+  margin-left: 2rem;
+}
+
+.main {
+  flex: 1;
+}
+
+.main header {
+  background-image: linear-gradient(90deg, #288e69, #0b281e);
+  height: 4.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem;
+}
+
+.main header h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.carta,
+.red-circle {
+  width: 2.5rem;
+  height: 2rem;
+  padding: 0.1rem;
+  border-radius: 10px;
+  background-image: linear-gradient(180deg, #307856, #10bc6c);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carta img {
+  width: 2rem;
+  height: 1.75rem;
+}
+
+.carta:hover {
+  cursor: pointer;
+}
+
+.red-circle {
+  position: relative;
+}
+
+.red-circle::before {
+  content: "1";
+  background-color: #f00;
+
+  position: absolute;
+  top: -5px;
+  right: -5px;
+
+  font-size: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+}
+
+.main main {
+  padding-left: 1.5rem;
+}
+
+.main main p {
+  font-size: 2rem;
+  color: #040404;
+
+  margin-top: 1.5rem;
+}
+
+.main main input {
+  width: 33rem;
+  height: 2.75rem;
+
+  margin-top: 1rem;
+
+  background-color: #d9d9d9;
+  border-radius: 8px;
+  padding: 1rem;
+  border: none;
+
+  font-size: 1.5rem;
+  color: #606060;
+}
+
+.organizer {
+  position: absolute;
+
+  right: 10rem;
+  top: 30%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.organizer p {
+  width: 11rem;
+  height: 2rem;
+
+  background-color: #71b79d;
+  border: 1px solid #818181;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.classes,
+.period {
+  width: 11.5rem;
+
+  background-color: #e4e4e4;
+  border: 1px solid #818181;
+  border-radius: 5px;
+
+  list-style: none;
+  line-height: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.classes button,
+.period button {
+  border: none;
+  background: transparent;
+
+  color: #1e0101;
+  font-weight: 600;
+}
+
+.classes button:hover,
+.period button:hover {
+  cursor: pointer;
+}
+
+.classes {
+  height: 7rem;
+}
+
+.period {
+  height: 3.25rem;
+}
+
+.organizer li:hover {
+  padding-left: 0.5rem;
+}
+
+.confirm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.confirm button {
+  width: 5rem;
+  height: 2rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  background-color: #71b79d;
+  border: 1px solid #818181;
+  border-radius: 5px;
+}
+
+.confirm button:hover {
+  cursor: pointer;
+}
+
+/* Modal */
+
+.modal {
+  position: absolute;
+  overflow: hidden;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #288e69;
+  width: 50rem;
+
+  border-radius: 50px;
+  border: 1px solid #000;
+}
+
+.modal header {
+  width: 100%;
+  height: 3rem;
+
+  background-color: #b6b6b6;
+  border-bottom: 1px solid #000;
+  border-radius: 50px;
+}
+
+.modal header button {
+  position: absolute;
+  top: 5px;
+  right: 50px;
+
+  width: 2.5rem;
+  height: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #307856;
+  border: 1px solid #000;
+  border-radius: 18px;
+}
+
+.modal header button img {
+  width: 2rem;
+}
+
+.modal header button:hover {
+  cursor: pointer;
+}
+
+.modal h2 {
+  margin-top: 0.5rem;
+
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.modal > p::before {
+  content: "";
+  border-radius: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #fff;
+}
+
+.modal p {
+  margin-top: 1.5rem;
+
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 500;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.modal > div {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 13rem;
+}
+
+.modal > div > div {
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal > div > div label {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.modal > div > div input {
+  display: none;
+}
+
+.modal > div > div input + label::before {
+  content: "";
+
+  width: 2.5rem;
+  height: 2rem;
+
+  border: 1px solid #000;
+  border-radius: 18px;
+  background-color: transparent;
+}
+
+.modal > div > div input:checked + label::before {
+  content: "";
+
+  background-image: url("/images/check-mark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.5rem;
+}
+
+.modal > div button {
+  width: 6rem;
+  height: 3.5rem;
+
+  background-color: #b6b6b6;
+  border: 1px solid #000;
+  border-radius: 12px;
+
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.modal > div button:hover {
+  cursor: pointer;
+}
+
+.black-space {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.black-space::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+
+  opacity: 0.8;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #229f72;
+
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: #fff;
+
+  width: 40rem;
+  height: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 5rem;
+
+  border-radius: 10px;
+
+  position: relative;
+}
+
+.container::before {
+  position: absolute;
+  content: "";
+
+  width: 40rem;
+  height: 1rem;
+
+  border-radius: 10px;
+
+  background-color: #0f5247;
+}
+
+.container::after {
+  position: absolute;
+  content: "Acesso restrito";
+  width: 10rem;
+  height: 4rem;
+
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 0;
+  right: 0;
+
+  border-radius: 0 8px 0 8px;
+  background-color: #0f5247;
+}
+
+.container h1 {
+  margin: 6rem 0 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+
+  align-self: flex-start;
+
+  border-bottom: 2px solid #229f72;
+  padding: 0.5rem;
+}
+
+.container p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #5f5f80;
+
+  width: 19.25rem;
+  height: 3rem;
+
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+}
+
+.button {
+  width: 17rem;
+  height: 2.5rem;
+
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+
+  border-radius: 10px;
+  border: none;
+  background-color: #229f72;
+
+  box-shadow: 0px 4px 6px #868686;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.5s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #0c8458;
+}
+
+.link-area {
+  margin-top: 1rem;
+}
+
+.link {
+  color: #1b17ce;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
