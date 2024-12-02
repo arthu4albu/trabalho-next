@@ -21,7 +21,7 @@ export default function Home() {
           />
 
           <button type="submit">Redefinir Senha</button>
-          <div>
+          <div className="link-area">
             <span>Não possui conta? Realize o </span>
             <span className="link">
               <Link href="/cadastro">Cadastro.</Link>

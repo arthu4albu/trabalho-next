@@ -1,6 +1,9 @@
+import Table from "@/src/components/Table/Table"
 import "./style.css"
 
 export default function Pesquisa() {
+  let isSearching = false
+
   return (
     <div className="container">
       <aside>
@@ -10,6 +13,8 @@ export default function Pesquisa() {
             <span>Usuário: Miku</span>
             <span>Data: 13/10/2024</span>
           </div>
+
+          <button type="button"></button>
         </header>
 
         <div className="access-menu">
@@ -45,37 +50,41 @@ export default function Pesquisa() {
           <input type="text" placeholder="Digite aqui..." />
         </main>
 
-        <div className="organizer">
-          <p>Organizar por:</p>
-          <ul className="classes">
-            <li>
-              <button>Autônomo</button>
-            </li>
-            <li>
-              <button>Nome</button>
-            </li>
-            <li>
-              <button>13º Salário</button>
-            </li>
-            <li>
-              <button>Salário Base</button>
-            </li>
-          </ul>
+        {isSearching ? (
+          <Table />
+        ) : (
+          <div className="organizer">
+            <p>Organizar por:</p>
+            <ul className="classes">
+              <li>
+                <button>Autônomo</button>
+              </li>
+              <li>
+                <button>Nome</button>
+              </li>
+              <li>
+                <button>13º Salário</button>
+              </li>
+              <li>
+                <button>Salário Base</button>
+              </li>
+            </ul>
 
-          <ul className="period">
-            <li>
-              <button>Ano</button>
-            </li>
-            <li>
-              <button>Mês</button>
-            </li>
-          </ul>
+            <ul className="period">
+              <li>
+                <button>Ano</button>
+              </li>
+              <li>
+                <button>Mês</button>
+              </li>
+            </ul>
 
-          <div className="confirm">
-            <button>Aplicar</button>
-            <button>Limpar</button>
+            <div className="confirm">
+              <button>Aplicar</button>
+              <button>Limpar</button>
+            </div>
           </div>
-        </div>
+        )}
       </div>
 
       <div className="black-space">
