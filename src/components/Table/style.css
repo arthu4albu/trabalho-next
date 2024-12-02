@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content-table {
+  border-collapse: collapse;
+
+  margin: 0.5rem 1.5rem 0;
+
+  background-color: #b6b6b6;
+
+  border: 2px solid #000;
+
+  color: #000;
+}
+
+.content-table th,
+.content-table td {
+  border: 1px solid #000;
+
+  text-align: left;
+  padding: 0.2rem;
+  width: 13rem;
+}
+
+.content-table tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
