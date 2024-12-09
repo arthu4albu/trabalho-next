@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import "./style.css"
 
@@ -32,13 +34,13 @@ export default function Cadastro() {
             </div>
 
             <div className="identification-code input">
-              <label htmlFor="user">Código de identificação: </label>
-              <input type="text" name="user" placeholder="Digite aqui..." />
+              <label htmlFor="code">Código de identificação: </label>
+              <input type="text" name="code" placeholder="Digite aqui..." />
             </div>
 
             <div className="confirm-password input">
-              <label htmlFor="user">Confirmar senha: </label>
-              <input type="text" name="user" placeholder="Digite aqui..." />
+              <label htmlFor="confirm">Confirmar senha: </label>
+              <input type="text" name="confirm" placeholder="Digite aqui..." />
             </div>
           </div>
 
